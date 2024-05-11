@@ -1,0 +1,78 @@
+@use '../global_style/index' as v;
+.main{
+    width: 100%;
+    height: 100vh;
+    .top_bar{
+        width: 100%;
+        height: 80px;
+        background-color: v.$primeColor ;
+    }
+
+    .container{
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+
+        .registration_part{
+            font-family: v.$fontMontserrat;
+            width: 45%;
+            max-width: 650px;
+            height: 450px;
+            background-color: v.$lightGray;
+            padding-top: 30px;
+            position: relative;
+            margin-top: 50px;
+
+            .registration_part_container{
+                width: 70%;
+                .input{
+                    display: block;
+                    margin-bottom: 25px;
+                    border: none;
+                    outline: none;
+                    background-color: v.$gray;
+                    height: 56px;
+                    width: 100%;
+                    padding: 5px 20px;
+                    border-radius: 5px;
+                    font-size: 16px;
+                }
+                .eye{
+                    position: absolute;
+                    top: 205px;
+                    right: 110px;
+                    font-size: 20px;
+                    cursor: pointer;
+                }
+                .checkInput{
+                    width: 130px;
+                   span{
+                    font-size: 13px;
+                   }
+                }
+                .signIn{
+                    width: 100%;
+                    height: 56px;
+                    border: none;
+                    background-color: v.$primeColor;
+                    margin-top: 27px;
+                    color: white;
+                    font-size: 18px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+
+                .footer_title{
+                    text-align: center;
+                    margin-top: 25px;
+                    color: rgba(68, 68, 68, 1);
+                    span{
+                        margin-left: 10px;
+                        color:v.$blue
+                    }
+                }
+            }
+        }
+    }
+}
