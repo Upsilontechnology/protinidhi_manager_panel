@@ -16,18 +16,19 @@
 
         .registration_part{
             font-family: v.$fontMontserrat;
-            width: 45%;
-            max-width: 650px;
-            height: 450px;
+            width: 874px;
+            max-width: 874px;
+            height: 589px;
             background-color: v.$lightGray;
-            padding-top: 30px;
+            padding-top: 55px;
             position: relative;
             margin-top: 50px;
 
             .registration_part_container{
-                width: 70%;
+                width: 616px;
                 .input{
                     display: block;
+                    margin: auto;
                     margin-bottom: 25px;
                     border: none;
                     outline: none;
@@ -41,15 +42,32 @@
                 }
                 .eye{
                     position: absolute;
-                    top: 205px;
-                    right: 110px;
+                    top: 230px;
+                    right: 150px;
                     font-size: 20px;
                     cursor: pointer;
                 }
                 .checkInput{
-                    width: 130px;
+                    width: 160px;
+                    padding: 26px 0;
+                    position: relative;
+                    div{
+                        width: 24px;
+                        height: 24px;
+                        cursor: pointer;
+                        background-color: v.$gray;
+                        border-radius: 5px;
+                    }
+                    i{
+                        position: absolute;
+                        top: 0;
+                        left: 8px;
+                        top: 25px;
+                        font-size: 21px;
+                         cursor: pointer;
+                    }
                    span{
-                    font-size: 13px;
+                    font-size: 15px;
                    }
                 }
                 .signIn{
@@ -57,7 +75,7 @@
                     height: 56px;
                     border: none;
                     background-color: v.$primeColor;
-                    margin-top: 27px;
+                    margin-top: 21px;
                     color: white;
                     font-size: 18px;
                     border-radius: 5px;
@@ -67,7 +85,7 @@
 
                 .footer_title{
                     text-align: center;
-                    margin-top: 25px;
+                    margin-top: 58px;
                     color: rgba(68, 68, 68, 1);
                     span{
                         margin-left: 10px;
