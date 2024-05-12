@@ -50,9 +50,21 @@
                 .checkInput{
                     width: 160px;
                     padding: 26px 0;
-                    img{
+                    position: relative;
+                    div{
                         width: 24px;
                         height: 24px;
+                        cursor: pointer;
+                        background-color: v.$gray;
+                        border-radius: 5px;
+                    }
+                    i{
+                        position: absolute;
+                        top: 0;
+                        left: 8px;
+                        top: 25px;
+                        font-size: 21px;
+                         cursor: pointer;
                     }
                    span{
                     font-size: 15px;

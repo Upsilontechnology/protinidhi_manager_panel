@@ -3,9 +3,10 @@ import reg from './Registration.module.scss';
 import logo from '../../icons/Layer_1.png';
 import { allInputs } from './allInput';
 import useRegistration from './useRegistration';
-import checkboxLogo from '../../icons/Rectangle 21.png';
+
+
 const Registration = () => {
-    const  {open, setOpen} = useRegistration();
+    const  {open, setOpen, check, setCheck} = useRegistration();
     allInputs[2].type = open ? 'text' : 'password'
     return (
         <div className={reg.main}>
@@ -23,8 +24,9 @@ const Registration = () => {
                         })
                     }
                     <i onClick={() => setOpen(!open)} className={`${reg.eye} ${open ? 'uil uil-eye': 'uil uil-eye-slash'}`}></ i>
-                    <div className={`${reg.checkInput} flex_around`}>
-                        <img src={checkboxLogo} alt="" />
+                    <div onClick={() => setCheck(!check)} className={`${reg.checkInput} flex_around`}>
+                        <div style={{backgroundColor: `${check ? 'rgba(215, 26, 33, 1)' : '' }`}} ></div>
+                        <i style={{color: `${check ? 'white' : ''}`, display: `${check ? 'block' : 'none'}`}} className="uil uil-check"></i>
                         <span>Remember Me</span>
                     </div>
 
