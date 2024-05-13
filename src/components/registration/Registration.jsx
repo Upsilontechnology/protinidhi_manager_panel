@@ -1,8 +1,8 @@
 import '../global_style/global_style.css';
 import reg from './Registration.module.scss';
-import logo from '../../icons/Layer_1.png';
 import { allInputs } from './allInput';
 import useRegistration from './useRegistration';
+import TopBar from '../tobBar/TopBar';
 
 
 const Registration = () => {
@@ -10,9 +10,7 @@ const Registration = () => {
     allInputs[2].type = open ? 'text' : 'password'
     return (
         <div className={reg.main}>
-            <div className={`${reg.top_bar} flex_center `}>
-                <img src={logo} alt="" />
-            </div>
+            <TopBar/>
             <div className={`${reg.container}  flex_center`}>
                 <div className={`${reg.registration_part} flex_top`}>
                     <div className={`${reg.registration_part_container} `}>
@@ -30,7 +28,7 @@ const Registration = () => {
                         <span>Remember Me</span>
                     </div>
 
-                    <input className={`${reg.signIn}`} type="submit" value="Sign In" />
+                    <input className={`${reg.signIn} loginSigninBtn`} type="submit" value="Sign In" />
 
                     <p className={`${reg.footer_title}`}>Already have an Account?<span>Log In</span></p>
                     </div>
