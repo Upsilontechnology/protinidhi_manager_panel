@@ -1,0 +1,29 @@
+@use '../global_style//index' as v;
+.main{
+    .container{
+        position: fixed;
+        top: 0;
+        .congratulationBox{
+            width: 874px;
+            height: 589px;
+            background-color: v.$lightGray;
+            .congratulationBox_container{
+                width: 616px;
+                height: 415px;
+                display: block;
+                text-align: center;
+                img{
+                    margin-bottom: 38px;
+                }
+                p{
+                    font-family: v.$fontMontserrat;
+                    font-weight: bold;
+                    color: rgba(64, 48, 48, 1);
+                }
+                .loginBtn{
+                    margin-top: 50px;
+                }
+            }
+        }
+    }
+}
