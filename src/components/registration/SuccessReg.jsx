@@ -2,7 +2,14 @@ import successReg from './SuccessReg.module.scss';
 import '../global_style/global_style.css';
 import TopBar from '../tobBar/TopBar';
 import congrass from '../../icons/congratulation.png';
+import { useNavigate } from 'react-router-dom';
 const SuccessReg = () => {
+
+
+    const navigate = useNavigate()
+    const handleSubmit = () => {
+            navigate('/login')
+    }
     return (
         <div className={`${successReg.main} full_width`}>
             <TopBar/>
@@ -14,7 +21,7 @@ const SuccessReg = () => {
                         <p>Account Registration Successfull.</p>
                         <p>Waiting for the admin approval to access Manager Panel.</p>
 
-                        <input className={`${successReg.loginBtn} loginSigninBtn`} type="submit" value='Log In' />
+                        <input onClick={handleSubmit} className={`${successReg.loginBtn} loginSigninBtn`} type="submit" value='Log In' />
                     </div>
                 </div>
             </div>
