@@ -44,7 +44,7 @@ const Registration = () => {
 
                         <input className={`${reg.signIn} loginSigninBtn`} type="submit" value="Sign In" />
 
-                        <p className={`${reg.footer_title}`}>Already have an Account?<span>Log In</span></p>
+                        <p className={`${reg.footer_title}`}>Already have an Account?<span onClick={() => navigate('/login')}>Log In</span></p>
                         </div>
                     </form>
                 </div>

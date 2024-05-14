@@ -4,7 +4,9 @@ import '../global_style/global_style.css';
 import TopBar from '../tobBar/TopBar';
 import { allLoginInputs } from './allLoginInput';
 import useLogin from './useLogin';
+import { useNavigate } from 'react-router-dom';
 const Login = () => {
+    const navigate = useNavigate();
     const  {open, setOpen, check, setCheck} = useLogin();
     allLoginInputs[1].type = open ? 'text' : 'password'
     return (
@@ -29,7 +31,7 @@ const Login = () => {
 
                 <input className={`${login.signIn} loginSigninBtn`} type="submit" value="Log In" />
 
-                <p className={`${login.footer_title}`}>Don't have an Account?<span>Register Now</span></p>
+                <p className={`${login.footer_title}`}>Don't have an Account?<span onClick={() => navigate('/')}>Register Now</span></p>
                 </div>
             </div>
         </div>

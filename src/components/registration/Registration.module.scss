@@ -44,7 +44,8 @@
                 }
                 .checkInput{
                     width: 160px;
-                    padding: 26px 0;
+                    padding-top: 10px;
+                    padding-bottom: 26px;
                     position: relative;
                     div{
                         width: 24px;
@@ -57,7 +58,7 @@
                         position: absolute;
                         top: 0;
                         left: 8px;
-                        top: 25px;
+                        top: 10px;
                         font-size: 21px;
                          cursor: pointer;
                     }
@@ -75,7 +76,8 @@
                     color: rgba(68, 68, 68, 1);
                     span{
                         margin-left: 10px;
-                        color:v.$blue
+                        color:v.$blue;
+                        cursor: pointer;
                     }
                 }
             }
