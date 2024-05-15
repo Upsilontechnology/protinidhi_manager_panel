@@ -1,0 +1,72 @@
+@use '../../global_style/index' as v;
+.main{
+    width: 1135px;
+    height: 850px;
+    font-family: v.$fontMontserrat;
+    .part1{
+        width: 100%;
+        height: 186px;
+        background-color: v.$white ;
+        // border: 1px solid black;
+        border-radius: 10px;
+        margin-bottom: 22px;
+        .part1_container{
+            background-color: v.$white ;
+            width: 90%;
+            height: auto;
+            margin: 0;
+            h2{
+                font-size: 26px;
+            }
+            p{
+                font-size: 18px;
+            }
+        }
+    }
+    .part2{
+        width: 1132px;
+        height: 642px;
+        // border: 1px solid black;
+        border-radius: 5px;
+        padding: 20px;
+        background-color: v.$white;
+        .part2_title{
+            width: 96%;
+            margin-bottom: 25px;
+            p{
+                font-weight: bold;
+                font-size: 24px;
+                color: rgba(68, 68, 68, 1);
+            }
+            img{
+                cursor: pointer;
+            }
+        }
+        .cart_container{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            .cart{
+                width: 332px;
+                height: 129px;
+                background: linear-gradient(to right, #D71A21, #4A9363 );
+                margin-right: 22px;
+                margin-bottom: 22px;
+                border-radius: 5px;
+                padding: 20px;
+                p{
+                    font-size: 16px;
+                    color: v.$white;
+                    margin-left: 10px;
+                }
+                h3{
+                    margin-top: 20px;
+                    font-size: 30px;
+                    font-weight: bold;
+                    color: v.$white
+                }
+            }
+        }
+    }
+}
