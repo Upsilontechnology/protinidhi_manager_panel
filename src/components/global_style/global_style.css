@@ -9,6 +9,7 @@
     width: 100%;
     height: 56px;
     background-color: rgba(215, 26, 33, 1);
+  
     outline: none;
     border: none;
     border-radius: 5px;
@@ -17,6 +18,11 @@
     font-weight: bold;
     font-family:"Montserrat", sans-serif;
     cursor: pointer;
+}
+
+.loginSigninBtn:hover{
+    background-color: rgb(179, 5, 11);
+   
 }
 
 .only_flex{
