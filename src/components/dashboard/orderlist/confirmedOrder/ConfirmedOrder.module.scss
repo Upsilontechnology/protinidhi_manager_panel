@@ -1,0 +1,83 @@
+@use '../../../global_style/index' as  v;
+
+    .part2{
+        width: 100%;
+        height: 737px;
+        background-color: v.$white;
+        border-radius: 5px;
+        padding: 30px 10px;
+        .part2_searchbar{
+            input{
+                width: 666px;
+                height: 49px;
+                background-color: v.$lightGray;
+                outline: none;
+                border: none;
+                font-family: v.$fontMontserrat;
+                padding: 10px 20px;
+                border-radius: 5px;
+            }
+        }
+        .part2_all_orders{
+           
+            width: 100%;
+            height: 560px;
+            margin-top: 20px;
+            // overflow-x: hidden;
+            // overflow-y: scroll;
+            .part2_order_container{
+                width: 96%;
+                border-bottom: 1px solid gray;
+                padding-bottom: 35px;
+                margin: 20px;
+              table{
+                tr{
+                    .width_5{
+                        width: 5%;
+                        // background-color: red;
+                    }
+                    .width_10{
+                        width: 5%;
+                        // background-color: red;
+                        .part2_profile{
+                            width: 50px;
+                            height: 50px;
+                            border-radius: 50%;
+                            border: 1px solid gray;
+                        }
+                       
+                    }
+                    .width_30{
+                        width: 30%;
+                        // background-color: red;
+                       .part2_viewBtn{
+                      
+                        background-color: v.$lightGray;
+                        padding: 10px 20px;
+                        border-radius: 5px;
+                        color: v.$primeColor;
+                        font-weight: 600;
+                        cursor: pointer;
+                       }
+                       .part2_viewBtn:hover{
+                        background-color: v.$primeColor;
+                        color: white;
+                       }
+    
+                       .part2_deleteIcon{
+                        margin-left: 20px;
+                       }
+                       
+                       .part2_namePhone{
+                        margin-left: 50px;
+                        margin-right: 15px;
+                      
+                       }
+                    }
+                    
+                }
+              }
+            }
+        }
+    
+    }

@@ -3,15 +3,15 @@ import deleteIcon from '../../../icons/delete.png';
 export const titleButton = [
     {
         value: 'Pending',
-        link: ''
+        link: '/dashboard/directOrderList/'
     },
     {
         value: 'Confirmed',
-        link: ''
+        link: '/dashboard/directOrderList/confirmed'
     },
     {
         value: 'Delivered',
-        link: ''
+        link: '/dashboard/directOrderList/delivered'
     },
 ]
 
@@ -22,6 +22,7 @@ export const orderIndex = [
         phone: '+88012345654',
         address: 'Rahima Mension, Road No 2, Gec more, Agrabad. Chittagong.',
         orderBtn: 'view order',
+        orderBtn2: 'copy',
         orderIcon: deleteIcon
     },
     {
@@ -30,6 +31,7 @@ export const orderIndex = [
         phone: '+88012345654',
         address: 'Rahima Mension, Road No 2, Gec more, Agrabad. Chittagong.',
         orderBtn: 'view order',
+        orderBtn2: 'copy',
         orderIcon: deleteIcon
     },
     {
@@ -38,6 +40,7 @@ export const orderIndex = [
         phone: '+88012345654',
         address: 'Rahima Mension, Road No 2, Gec more, Agrabad. Chittagong.',
         orderBtn: 'view order',
+        orderBtn2: 'copy',
         orderIcon: deleteIcon
     },
     {
@@ -46,6 +49,7 @@ export const orderIndex = [
         phone: '+88012345654',
         address: 'Rahima Mension, Road No 2, Gec more, Agrabad. Chittagong.',
         orderBtn: 'view order',
+        orderBtn2: 'copy',
         orderIcon: deleteIcon
     },
     {
@@ -54,6 +58,7 @@ export const orderIndex = [
         phone: '+88012345654',
         address: 'Rahima Mension, Road No 2, Gec more, Agrabad. Chittagong.',
         orderBtn: 'view order',
+        orderBtn2: 'copy',
         orderIcon: deleteIcon
     },
 ]
