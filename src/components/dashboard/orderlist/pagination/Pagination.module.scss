@@ -1,0 +1,26 @@
+@use '../../../global_style//index' as v;
+.main{
+    height: 50px;
+    div{
+        cursor: pointer;
+        p{
+            border-radius: 3px;
+            width: 35px;
+            height: 35px;
+            margin: 2px;
+            color: v.$fontGrayColor;
+            font-weight: bold;
+        }
+        .gray{
+            background-color: gray;
+            color: white;
+        }
+        .lightGray{
+            background-color: v.$gray;
+        }
+        .icon{
+            font-size: 25px;
+            font-weight: bold;
+        }
+    }
+}
