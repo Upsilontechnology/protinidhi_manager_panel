@@ -2,7 +2,9 @@ import overview from './Overview.module.scss';
 import mainicon from '../../../icons/overviewMain.png';
 import { overviewCart } from './overviewCart';
 import cartView from '../../../icons/cart-view.png';
+import { useNavigate } from 'react-router-dom';
 const Overview = () => {
+    const navigate = useNavigate();
     return (
         <div className={`${overview.main}`}>
            <div className={`${overview.part1} flex_bottom`}>
@@ -23,7 +25,7 @@ const Overview = () => {
                     {
                         overviewCart?.map((cart, index) => {
                             return (
-                                <div className={overview.cart} key={index + 1}>
+                                <div onClick={() => navigate(cart?.link)} className={overview.cart} key={index + 1}>
                                     <div className={`${overview.cart_1} flex_center_alignment`}>
                                         <img src={cart.icon} alt="" />
                                         <p>{cart.title}</p>
