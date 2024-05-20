@@ -8,32 +8,38 @@ import overviewCart6 from '../../../icons/overview-cart-6.png'
 export const overviewCart = [
     {
         title: 'Total Amount',
+        link: '',
         amount: 150000,
         icon: overviewCart1,
         currency: 'BDT'
     },
     {
         title: 'Total Order',
+        link: '/dashboard/directOrderList/',
         amount: 3000,
         icon: overviewCart2
     },
     {
         title: 'Total Pending',
+        link: '',
         amount: 3000,
         icon: overviewCart3
     },
     {
         title: 'Total Delivered',
+        link: '',
         amount: 2000,
         icon: overviewCart4
     },
     {
         title: 'Total Client',
+        link: '',
         amount: 100,
         icon: overviewCart5
     },
     {
         title: 'Total Rider',
+        link: '',
         amount: 100,
         icon: overviewCart6
     },
