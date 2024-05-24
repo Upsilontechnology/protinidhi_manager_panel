@@ -17,6 +17,7 @@ function RiderList() {
             <Rider />
             <Rider />
             <Rider />
+            <Rider />
 
         </div>
 

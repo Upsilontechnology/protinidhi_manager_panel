@@ -49,6 +49,26 @@ function App() {
           path: "riderlist",
           element: <RiderList />
         },
+        {
+          path: "clientlist",
+          element: <RiderList />
+        },
+        {
+          path: "servicelist",
+          element: <RiderList />
+        },
+        {
+          path: "supportticket",
+          element: <RiderList />
+        },
+        {
+          path: "createorder",
+          element: <RiderList />
+        },
+        {
+          path: "orderlist",
+          element: <RiderList />
+        },
         
       ]
     }
