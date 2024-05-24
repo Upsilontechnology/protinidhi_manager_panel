@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom styles for the checkbox */
+input[type="checkbox"].custom-checkbox {
+    @apply appearance-none w-5 h-5 bg-[#D9D9D9] border-none rounded cursor-pointer;
+  }
+  input[type="checkbox"].custom-checkbox:checked {
+    @apply bg-[#D71A21] flex items-center justify-center;
+  }
+  input[type="checkbox"].custom-checkbox:checked::before {
+    content: '✓';
+    @apply text-white text-base;
+  }
