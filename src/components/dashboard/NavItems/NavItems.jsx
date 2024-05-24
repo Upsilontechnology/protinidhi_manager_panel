@@ -27,14 +27,14 @@ function NavItems() {
     <div className=' p-[5%] '>
         <h3 className=' text-[1.3rem] font-semibold '>Manager Dashboard</h3>
         <div className=' flex flex-col gap-3 mt-[15%]   '>
-          <NavLink to={"/dashboard"}  className={({ isActive }) => `${isActive ? "bg-[#D71A21] " : null} group  text-[#000] hover:text-[#fff] hover:bg-[#D71A21] flex items-center px-5 py-2 gap-3 rounded-md cursor-pointer `}>
+          <NavLink to={""}  className={({ isActive }) => `${isActive ? "bg-[#D71A21] " : null} group  text-[#000] hover:text-[#fff] hover:bg-[#D71A21] flex items-center px-5 py-2 gap-3 rounded-md cursor-pointer `}>
             <img src={NavIcon1} alt="" className=' group-hover:hidden block w-4 ' />
             <img src={NavHoverIcon1} alt="" className='  hidden group-hover:block w-4 ' />
             <h3 className=' font-medium  '>Overview</h3>
           </NavLink>
         
         
-          <NavLink to={"/dashboard/directOrderList"} className={({ isActive }) => `${isActive ? "bg-[#D71A21]" : null} group  text-[#000] hover:text-[#fff] hover:bg-[#D71A21] flex items-center px-5 py-2 gap-3 rounded-md cursor-pointer `}>
+          <NavLink to={"directOrderList"} className={({ isActive }) => `${isActive ? "bg-[#D71A21]" : null} group  text-[#000] hover:text-[#fff] hover:bg-[#D71A21] flex items-center px-5 py-2 gap-3 rounded-md cursor-pointer `}>
             <img src={NavIcon2} alt="" className='group-hover:hidden block w-4 ' />
             <img src={NavHoverIcon2} alt="" className=' hidden group-hover:block w-4 ' />
             <h3 className=' font-medium  '>Order List</h3>
@@ -55,7 +55,7 @@ function NavItems() {
           </NavLink>
         
         
-          <NavLink className={({ isActive }) => `${isActive ? "active" : null} group text-[#000] hover:text-[#fff] hover:bg-[#D71A21] flex items-center px-5 py-2 gap-3 rounded-md  cursor-pointer`}>
+          <NavLink to={'riderlist'} className={({ isActive }) => `${isActive ? "active" : null} group text-[#000] hover:text-[#fff] hover:bg-[#D71A21] flex items-center px-5 py-2 gap-3 rounded-md  cursor-pointer`}>
             <img src={NavIcon5} alt="" className='group-hover:hidden block w-4 ' />
             <img src={NavHoverIcon5} alt="" className=' hidden group-hover:block w-4 ' />
             <h3 className=' font-medium  '>Rider List</h3>
