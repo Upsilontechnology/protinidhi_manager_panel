@@ -9,6 +9,7 @@ import Orderlist from "./components/dashboard/orderlist/Orderlist"
 import PendingOrder from "./components/dashboard/orderlist/pandingOrders/PendingOrder"
 import ConfirmedOrder from "./components/dashboard/orderlist/confirmedOrder/ConfirmedOrder"
 import DeliveredOrder from "./components/dashboard/orderlist/deliveredOrder/DeliveredOrder"
+import RiderList from "./components/dashboard/riderlist/RiderList.jsx"
 function App() {
 
   const router = createBrowserRouter([
@@ -43,6 +44,10 @@ function App() {
               element: <DeliveredOrder/>
             },
           ]
+        },
+        {
+          path: "riderlist",
+          element: <RiderList />
         },
         
       ]
