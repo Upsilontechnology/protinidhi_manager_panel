@@ -7,6 +7,7 @@ import NavHoverIcon5 from "../../../icons/NavHoverIcon5.png"
 import NavHoverIcon6 from "../../../icons/NavHoverIcon6.png"
 import NavHoverIcon7 from "../../../icons/NavHoverIcon7.png"
 import NavHoverIcon8 from "../../../icons/NavHoverIcon8.png"
+import NavHoverIcon9 from "../../../icons/NavHoverIcon9.png"
 import NavIcon1 from "../../../icons/NavIcon1.png"
 import NavIcon2 from "../../../icons/NavIcon2.png"
 import NavIcon3 from "../../../icons/NavIcon3.png"
@@ -15,6 +16,7 @@ import NavIcon5 from "../../../icons/NavIcon5.png"
 import NavIcon6 from "../../../icons/NavIcon6.png"
 import NavIcon7 from "../../../icons/NavIcon7.png"
 import NavIcon8 from "../../../icons/NavIcon8.png"
+import NavIcon9 from "../../../icons/NavIcon9.png"
 import NavLastIcon from "../../../icons/NavLastIcon.png"
 import { NavLink, useLocation } from 'react-router-dom'
 // import "./NavItems.css"
@@ -51,20 +53,25 @@ function NavItems() {
             <img src={NavHoverIcon2} alt="" className={` ${activePath === "/dashboard/directOrderList" ? "block" : "hidden"}   group-hover:block w-4 `} />
             <h3 className=' font-medium  '>Order List</h3>
           </NavLink>
+          <NavLink onClick={handleClick}  to={"message"} className={` ${activePath === "/dashboard/message" ? "bg-[#d71a2a] text-[#fff]" : null} group  text-[#000] hover:text-[#fff] hover:bg-[#D71A21] flex items-center px-5 py-2 gap-3 rounded-md cursor-pointer `}>
+            <img src={NavIcon9} alt="" className={` ${activePath === "/dashboard/message" ? "hidden" : null}  group-hover:hidden block w-4 `} />
+            <img src={NavHoverIcon9} alt="" className={` ${activePath === "/dashboard/message" ? "block" : "hidden"}   group-hover:block w-4 `} />
+            <h3 className=' font-medium  '>Message (7)</h3>
+          </NavLink>
         
         
-          <NavLink onClick={handleClick}  to={'clientlist'}   className={` ${activePath === "/dashboard/clientlist" ? "bg-[#d71a2a] text-[#fff]" : null} group text-[#000] hover:text-[#fff] hover:bg-[#D71A21] flex items-center px-5 py-2 gap-3 rounded-md cursor-pointer `}>
+          {/* <NavLink onClick={handleClick}  to={'clientlist'}   className={` ${activePath === "/dashboard/clientlist" ? "bg-[#d71a2a] text-[#fff]" : null} group text-[#000] hover:text-[#fff] hover:bg-[#D71A21] flex items-center px-5 py-2 gap-3 rounded-md cursor-pointer `}>
             <img src={NavIcon3} alt="" className={` ${activePath === "/dashboard/clientlist" ? "hidden" : null}  group-hover:hidden block w-4 `} />
             <img src={NavHoverIcon3} alt="" className={` ${activePath === "/dashboard/clientlist" ? "block" : "hidden"}   group-hover:block w-4 `} />
             <h3 className=' font-medium  '>Client List</h3>
-          </NavLink>
+          </NavLink> */}
         
         
-          <NavLink onClick={handleClick}  to={'servicelist'} className={` ${activePath === "/dashboard/servicelist" ? "bg-[#d71a2a] text-[#fff]" : null} group text-[#000] hover:text-[#fff] hover:bg-[#D71A21] flex items-center px-5 py-2 gap-3 rounded-md cursor-pointer `}>
+          {/* <NavLink onClick={handleClick}  to={'servicelist'} className={` ${activePath === "/dashboard/servicelist" ? "bg-[#d71a2a] text-[#fff]" : null} group text-[#000] hover:text-[#fff] hover:bg-[#D71A21] flex items-center px-5 py-2 gap-3 rounded-md cursor-pointer `}>
             <img src={NavIcon4} alt="" className={` ${activePath === "/dashboard/servicelist" ? "hidden" : null}  group-hover:hidden block w-4 `} />
             <img src={NavHoverIcon4} alt="" className={` ${activePath === "/dashboard/servicelist" ? "block" : "hidden"}   group-hover:block w-4 `} />
             <h3 className=' font-medium  '>Service List</h3>
-          </NavLink>
+          </NavLink> */}
         
         
           <NavLink onClick={handleClick}  to={'riderlist'} className={` ${activePath === "/dashboard/riderlist" ? "bg-[#d71a2a] text-[#fff]" : null} group text-[#000] hover:text-[#fff] hover:bg-[#D71A21] flex items-center px-5 py-2 gap-3 rounded-md  cursor-pointer`}>
