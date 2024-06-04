@@ -11,6 +11,7 @@ import ConfirmedOrder from "./components/dashboard/orderlist/confirmedOrder/Conf
 import DeliveredOrder from "./components/dashboard/orderlist/deliveredOrder/DeliveredOrder"
 import RiderList from "./components/dashboard/riderlist/RiderList.jsx"
 import CreateOrder from "./components/dashboard/createOrder/CreateOrder.jsx"
+import Message from "./components/dashboard/message/Message.jsx"
 function App() {
 
   const router = createBrowserRouter([
@@ -49,6 +50,10 @@ function App() {
         {
           path: "riderlist",
           element: <RiderList />
+        },
+        {
+          path: "message",
+          element: <Message />
         },
         {
           path: "clientlist",
